@@ -1,12 +1,78 @@
-# React + Vite
+# Leetcode-Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal Leetcode-style coding playground built with React, Vite and the Monaco editor.  
+Scratch your coding itch locally, track your progress and run tests—all in one place.
 
-Currently, two official plugins are available:
+## 🚀 Quick Start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Clone**  
+   ```bash
+   git clone https://github.com/YoshikageKira425/Leetcode-Clone.git
+   cd Leetcode-Clone
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Install**
+
+   ```bash
+   npm install
+   ```
+
+3. **Dev Server**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open your browser at `http://localhost:5173` (or whatever Vite tells you).
+
+4. **Build for Production**
+
+   ```bash
+   npm run build
+   ```
+
+## 🛠️ Features
+
+* **Problem Browser**
+  Browse, filter and select coding challenges.
+* **In-browser Code Editor**
+  Powered by [Monaco Editor](https://github.com/microsoft/monaco-editor).
+* **Run**
+  Hit “Run” to execute your code.
+* **Routing**
+  Single-page app with React Router (problem list → individual problem → results).
+* **Tailwind CSS**
+  Utility-first styling; tweak `src/Style/input.css` → `src/Style/output.css`.
+
+## 📁 Project Structure
+
+```
+.
+├── public/                 Static assets & `index.html`
+├── src/
+│   ├── components/         Reusable React components
+│   ├── pages/              Views (ProblemList, ProblemDetail, etc.)
+│   ├── services/           API calls, test runners
+│   ├── Style/              Tailwind input/output CSS
+│   ├── App.jsx             Root component & routes
+│   └── main.jsx            Vite entry point
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## ⚙️ Scripts
+
+* `npm run dev` — start Vite dev server
+* `npm run build` — bundle for production
+* `npm run preview` — serve built files locally
+* `npm run lint` — run ESLint
+* `npm run watch` — rebuild Tailwind CSS on change
+
+## 💡 Tech Stack
+
+* **Framework**: React 19
+* **Bundler**: Vite
+* **Editor**: @monaco-editor/react
+* **Styling**: Tailwind CSS
+* **Routing**: React Router DOM
