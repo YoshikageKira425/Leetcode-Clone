@@ -25,12 +25,6 @@ Scratch your coding itch locally, track your progress and run tests—all in one
 
    Open your browser at `http://localhost:5173` (or whatever Vite tells you).
 
-4. **Build for Production**
-
-   ```bash
-   npm run build
-   ```
-
 ## 🛠️ Features
 
 * **Problem Browser**
