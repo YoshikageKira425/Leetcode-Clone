@@ -64,9 +64,6 @@ Scratch your coding itch locally, track your progress and run tests—all in one
 ## ⚙️ Scripts
 
 * `npm run dev` — start Vite dev server
-* `npm run build` — bundle for production
-* `npm run preview` — serve built files locally
-* `npm run lint` — run ESLint
 * `npm run watch` — rebuild Tailwind CSS on change
 
 ## 💡 Tech Stack
